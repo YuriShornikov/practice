@@ -11,7 +11,7 @@ class Test_for():
             for j in range(i+1):
                 # self.new_list.append(self.test_list[i][j])
                 # return self
-                return self.test_list[i][j]
+                yield self.test_list[i][j]
 
     # def __next__(self):
     #     x = iter(self.test_list[i][j])
@@ -30,8 +30,8 @@ class Test_for():
 t = Test_for(test_list)
 # print(t)
 it = iter(t)
-# print(t)
+
+
 print(next(it))
-# print(next(it))
-# print(next(it))
-# print(next(it))
+print(next(it))
+print(next(it))
